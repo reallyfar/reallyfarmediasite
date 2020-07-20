@@ -3,10 +3,75 @@ html{
 }
 h1{
   font: inherit;
-  font-weight: 600;
-  font-size: 9rem;
-}
+  font-weight: bolder;
+  font-size: 5rem;
 
+}
+/* banner section */
+#banner{
+  background-color: #010012;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  width: auto;
+}
+#banner .text h1{
+  color: #00ffff;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 100px;
+}
+#banner .text span{
+  color: #ff69b4;
+}
+#banner .text a{
+  border: 5px solid;
+  border-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+#banner .text a:hover{
+  color: #00ffff;
+  border-color: #00ffff;
+  transition: 0.5s;
+}
+/* end banner section */
+
+/* team section */
+#team{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#team .section-title h2{
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+#team .section-title span{
+  color: #ff69b4;
+}
+#team .member{
+  line-height: 2px;
+}
+#team .member h3{
+  font-size: 3rem;
+  font-style: bold;
+}
+#team .member h4{
+  font-size: 2rem;
+  font-style: oblique;
+}
+#team .member p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+/* end team section */
 @font-face {
     font-family: 'josefin_sansthin';
     src: url('../fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
