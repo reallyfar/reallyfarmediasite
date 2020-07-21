@@ -142,8 +142,9 @@ nav{
     font-style: normal;
 
 }
+/*
 
-@media screen and (max-width:768px){
+@media screen and (max-width:"device-width"){
   body{
     overflow-x: hidden;
   }
@@ -189,3 +190,4 @@ nav{
     transform: translateX(0px);
   }
 }
+*/
