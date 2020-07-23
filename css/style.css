@@ -142,11 +142,14 @@ nav{
     font-style: normal;
 
 }
-/*
 
-@media screen and (max-width:"device-width"){
+
+@media only screen and (max-width:"425px"){
   body{
     overflow-x: hidden;
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .nav-links{
     position: absolute;
@@ -177,7 +180,6 @@ nav{
 .nav-active{
   width: 100%;
   transform: translateX(0%);
-  z-index: 3;
 }
 
 @@keyframes navLinkFade {
@@ -190,4 +192,3 @@ nav{
     transform: translateX(0px);
   }
 }
-*/
