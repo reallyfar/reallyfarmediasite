@@ -1,224 +1,97 @@
-*{
-  margin-left: 0px;
-  margin-right: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
-html{
-  font-family: 'josefin_sansthin'
-}
-h1{
-  font: inherit;
-  font-weight: bolder;
-  font-size: 5rem;
 
+nav {
+  font-family: 'josefin-sans', sans-serif;
+  background-color: white;
+  height: 80px;
+  width: 100%;
 }
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 5vh;
-  font-family: 'Rowdies', cursive;
-  margin: 0px;
-  padding: 0px;
+nav .logo{
+  font-size: 50px;
+  color: black;
+  line-height: 80px;
+  padding: 0 100px;
 }
-#navbar {
-  width: 63%;
-  height: 100px;
-  padding-top: 5px;
-  margin: 0px auto;
+label.logo a{
+  color: black;
+  text-decoration: none;
 }
-.logo{
-  color: #ff69b4;
-  font-size: 2rem;
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
   text-transform: uppercase;
 }
-.logo a{
-  text-decoration: none;
-  color:#ff69b4;
-}
-.logo img{
-  width: 80px;
-  height: auto;
-  position: inherit;
-}
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
-.nav-links a{
-  text-decoration: none;
-  color: #2b2c3b;
-  font-weight: normal;
-}
-.nav-links a:hover{
-  color: #ff69b4;
-  transition: 0.35s ease;
-}
-.nav-links li{
-  list-style: none;
-}
-.burger{
-  display: none;
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
+  display: none;
 }
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color: #ff69b4;
-  margin: 4px;
+#check{
+  display: none;
 }
-
-
-/* banner section */
-#banner{
-  background-image: url("../imgs/banner background.jpg");
-  position: inherit;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 200px;
-  width: 100%;
+body{
+  font-family: 'josefin-sans', sans-serif;
+  background: grey;
 }
-#banner .text{
-  width: 100%;
-  margin: 0% auto;
-  padding: auto;
+@media (max-width: 768px){
+  label.logo{
+    font-size: 40px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
 }
-#banner .text h1{
-  color: #00ffff;
-  text-transform: uppercase;
-  font-size: 400%;
-  line-height: 100px;
-  display: inline;
-  margin: 0px auto;
+@media (max-width: 768px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: pink;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+      left: 0;
+  }
 }
-#banner .text span{
-  color: #ff69b4;
-  z-index: -1;
-}
-#banner .text u{
-  color: #ff69b4;
-  position:relative;
-}
-#banner .text a{
-  border: 3px solid;
-  border-color: white;
-  padding: 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 100%;
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-}
-#banner .text a:hover{
-  color: #010012;
-  background-color: #00ffff;
-  border-color: #00ffff;
-  transition: 0.5s ease;
-  font-weight: bold;
-}
-/* end banner section */
-
-/* team section */
-#team{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  width: 1260px;
-  margin: 0px auto;
-}
-#team .section-title h2{
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-#team .section-title span{
-  color: #ff69b4;
-}
-#team .member{
-  line-height: 2px;
-}
-#team .member h3{
-  font-size: 3rem;
-  font-style: bold;
-}
-#team .member h4{
-  font-size: 2rem;
-  font-style: oblique;
-}
-#team .member p{
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-style: italic;
-}
-/* end team section */
 @font-face {
     font-family: 'josefin_sansthin';
-    src: url('../fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../fonts/josefinsans-variablefont_wght-webfont.woff') format('woff');
+    src: url('josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('josefinsans-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
-
-
-@media only screen and (max-width:"768px"){
-  body{
-    overflow-x: hidden;
-  }
-  #banner .text h1 {
-    font-size: 50%;
-  }
-  .nav-links{
-
-    position: absolute;
-    right: 0px;
-    width: 30%;
-    height: 89vh;
-    top: 12vh;
-    background-color: #ff69b4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(100%);
-    transition: 0.5s;
-  }
-  .nav-links li{
-    font-size: 20px;
-    opacity: 1;
-  }
-  .nav-links a:hover{
-    color: #00ffff;
-  }
-  .burger{
-    display: block;
-  }
-}
-
-
-.nav-active{
-  width: 100%;
-  transform: translateX(0%);
-}
-
-@@keyframes navLinkFade {
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
-
-@-ms-viewport {
-  width: extend-to-zoom;
-  zoom: 1.0;
 }
