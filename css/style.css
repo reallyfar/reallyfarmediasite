@@ -11,6 +11,7 @@ nav {
   background-color: white;
   height: 80px;
   width: 100%;
+  position: fixed;
 }
 nav .logo{
   font-size: 50px;
@@ -61,27 +62,26 @@ body{
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 280px;
+  padding-bottom: 200px;
 }
 #banner h1{
   font-family: 'josefin-sans', sans-serif;
   font-size: 70px;
   color: #00e1ff;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: -3px;
   font-weight: 100;
 }
 #banner h1 span{
   color: #ff45b1;
   font-weight: bold;
-  text-shadow: 0 0 30px #700142;
+  text-shadow: 0 0 40px #700142;
 }
 #banner a{
   border: 2px solid;
   border-radius: 50px;
   color: white;
-  line-height: 200px;
   padding: 30px;
   font-size: 20px;
   font-weight: 700;
@@ -93,6 +93,49 @@ body{
   color: #010429;
   transition: all .3s;
 }
+#banner .bannerbtn{
+  padding-top: 100px;
+}
+#why{
+  background-color: rgba(255, 230, 255, 0.3);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#why h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#why p{
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: rgb(84, 84, 84);
+  font-size: 20px;
+}
+#work{
+  background-color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#work h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#team{
+  background-color: rgba(255, 230, 255, 0.3);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#team h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
 @media (max-width: 768px){
   label.logo{
     font-size: 40px;
@@ -100,6 +143,10 @@ body{
   }
   nav ul li a{
     font-size: 16px;
+  }
+  #why p{
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media (max-width: 768px){
@@ -115,6 +162,9 @@ body{
     left: 100%;
     text-align: center;
     transition: all .5s;
+  }
+  nav ul{
+    padding-right: 0px;
   }
   nav ul li{
     display: block;
