@@ -17,7 +17,12 @@ nav .logo{
   font-size: 50px;
   color: black;
   line-height: 80px;
-  padding: 0 400px;
+  padding: 0 50px;
+}
+nav .logo img{
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
 }
 label.logo a{
   color: #ff45b1;
