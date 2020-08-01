@@ -102,7 +102,7 @@ body{
   padding-top: 100px;
 }
 #why{
-  background-color: rgba(255, 230, 255, 0.3);
+  background-color: rgba(250, 250, 250);
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -119,6 +119,15 @@ body{
   color: rgb(84, 84, 84);
   font-size: 20px;
 }
+#why a{
+  border: 2px solid;
+  border-radius: 50px;
+  color: #ff45b1;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 #work{
   background-color: white;
   text-align: center;
@@ -131,7 +140,7 @@ body{
   text-transform: uppercase;
 }
 #team{
-  background-color: rgba(255, 230, 255, 0.3);
+  background-color: rgba(250, 250, 250);
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
