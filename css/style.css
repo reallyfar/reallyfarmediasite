@@ -6,6 +6,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+p {
+  font-family: 'Manrope', sans-serif;
+}
 nav {
   font-family: 'Rowdies', cursive;
   background-color: white;
@@ -23,6 +26,7 @@ nav .logo img{
   width: 100px;
   height: auto;
   margin-top: 10px;
+  z-index: 2;
 }
 label.logo a{
   color: #ff45b1;
@@ -118,6 +122,7 @@ body{
   margin-right: 25%;
   color: rgb(84, 84, 84);
   font-size: 20px;
+  line-height: 30px;
 }
 #why a{
   border: 2px solid;
@@ -127,6 +132,12 @@ body{
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+}
+#why a:hover{
+  background-color: #00e1ff;
+  border-color: #00e1ff;
+  color: white;
+  transition: ease .5s;
 }
 #work{
   background-color: white;
@@ -170,12 +181,12 @@ body{
   ul{
     position: fixed;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background: pink;
     top: 80px;
     left: 100%;
     text-align: center;
-    transition: all .5s;
+    transition: ease .5s;
   }
   nav ul li{
     display: block;
