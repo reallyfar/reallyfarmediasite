@@ -23,9 +23,8 @@
       </label>
       <ul>
         <li><a href="#why">Why us?</a></li>
-        <li><a href="#">Our Work</a></li>
-        <li><a href="#">Our Services</a></li>
         <li><a href="#">Contact Us</a></li>
+        <span></span>
       </ul>
     </nav>
   <section id="container">
@@ -44,8 +43,13 @@
           If it doesn’t sit right with us, then we know it won’t sit right with you.
           There is a balance between the needs, wants, and the message of the client. Everything has a story, and
           there needs to be the perfect way to tell it. It all starts with the initial discovery session to establish the vision. </p>
-        <br><br><br>
-        <a href="#">Schedule a Free Consultation</a>
+        <!-- Calendly link widget begin -->
+        <div class="calendly">
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/reallyfar/freeconsult'});return false;">Start Your Discovery!</a>
+        </div>
+        <!-- Calendly link widget end -->
       </div>
     </section>
     <section id="work">
@@ -70,8 +74,22 @@
         -->
     </section>
   </section>
+  <section id="footer">
+    <ul>
+      <li>About Us</li>
+      <li>About Us</li>
+      <li>About Us</li>
+      <li>About Us</li>
+    </ul>
+    <div class="calendly">
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/reallyfar/freeconsult'});return false;">Schedule a Free Consultation!</a>
+    </div>
+  </section>
   <!--
   <script src="./js/app.js"></script>
 -->
 </body>
+
 </html>

@@ -21,6 +21,7 @@ nav .logo{
   color: black;
   line-height: 80px;
   padding: 0 50px;
+  margin-left: 400px;
 }
 nav .logo img{
   width: 100px;
@@ -38,12 +39,12 @@ label.logo a:hover{
 }
 nav ul{
   float: right;
-  margin-right: 30px;
+  margin-right: 400px;
 }
 nav ul li{
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 nav ul li a{
   color: black;
@@ -124,6 +125,9 @@ body{
   font-size: 20px;
   line-height: 30px;
 }
+#why .calendly{
+  padding-top: 60px;
+}
 #why a{
   border: 2px solid;
   border-radius: 50px;
@@ -139,6 +143,7 @@ body{
   color: white;
   transition: ease .5s;
 }
+
 #work{
   background-color: white;
   text-align: center;
@@ -161,6 +166,41 @@ body{
   font-size: 40px;
   text-transform: uppercase;
 }
+
+#footer {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #ff45b1;
+}
+#footer ul{
+  display: inline-flex;
+}
+#footer ul li{
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+#footer .calendly{
+  padding-top: 40px;
+}
+#footer .calendly a{
+  border: 2px solid;
+  border-radius: 50px;
+  color: #00e1ff;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#footer .calendly a:hover{
+  background-color: #00e1ff;
+  border-color: #00e1ff;
+  color: white;
+  transition: ease .5s;
+}
 @media (max-width: 768px){
   label.logo{
     font-size: 40px;
@@ -181,12 +221,18 @@ body{
   ul{
     position: fixed;
     width: 100%;
-    height: 40vh;
+    height: 22vh;
     background: pink;
     top: 80px;
     left: 100%;
     text-align: center;
     transition: ease .5s;
+  }
+  nav ul span{
+    color: black;
+    height: 100%;
+    opacity: 0.5;
+    left: 100%
   }
   nav ul li{
     display: block;
@@ -200,19 +246,29 @@ body{
       left: 0;
   }
 }
+
+@media (max-width: 1440px){
+  nav .logo{
+    font-size: 40px;
+    padding: 0 50px;
+    margin-left: 250px;
+  }
+  nav ul{
+    margin-right: 250px;
+  }
+}
+
 @media (max-width: 1024px){
   label.logo{
     padding: 0 -10px;
+    margin-left: 0px;
+  }
+  nav ul{
+    margin-right: 30px;
   }
   #why p{
     margin-left: 10%;
     margin-right: 10%;
-  }
-}
-@media (max-width: 1440px){
-  label.logo{
-    font-size: 40px;
-    padding: 0 50px;
   }
 }
 @font-face {
