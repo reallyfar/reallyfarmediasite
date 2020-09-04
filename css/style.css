@@ -166,7 +166,25 @@ body{
   font-size: 40px;
   text-transform: uppercase;
 }
-
+#contact-top {
+  padding-top: 180px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#contact-top h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#contact-top p{
+  text-align: center;
+  padding-top: 1.3rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: rgb(84, 84, 84);
+  font-size: 20px;
+  line-height: 30px;
+}
 .footer {
   text-align: center;
   padding-bottom: 50px;
@@ -186,6 +204,10 @@ body{
   cursor: pointer;
   color: white;
   font-weight: bold;
+}
+#cta ul li a{
+  text-decoration: none;
+  color: white;
 }
 #cta .social ul{
   padding-top: 15px;
