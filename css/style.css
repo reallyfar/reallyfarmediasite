@@ -167,26 +167,51 @@ body{
   text-transform: uppercase;
 }
 
-#footer {
+.footer {
   text-align: center;
-  padding-top: 50px;
   padding-bottom: 50px;
   background: #ff45b1;
 }
-#footer ul{
+#cta{
+  text-align: center;
+  padding-top: 50px;
+  background: #ff45b1;
+}
+#cta ul{
   display: inline-flex;
 }
-#footer ul li{
+#cta ul li{
   display: inline-block;
   margin: 0 10px;
   cursor: pointer;
   color: white;
   font-weight: bold;
 }
-#footer .calendly{
+#cta .social ul{
+  padding-top: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.fa-facebook-f{
+  color: white;
+  font-size: 1.25rem;
+}
+.fa-twitter{
+  color: white;
+  font-size: 1.25rem;
+}
+.fa-medium-m{
+  color: white;
+  font-size: 1.25rem;
+}
+.fa-adobe{
+  color: white;
+  font-size: 1.25rem;
+}
+.footer .calendly{
   padding-top: 40px;
 }
-#footer .calendly a{
+.footer .calendly a{
   border: 2px solid;
   border-radius: 50px;
   color: #00e1ff;
@@ -195,11 +220,17 @@ body{
   font-weight: 700;
   text-transform: capitalize;
 }
-#footer .calendly a:hover{
+.footer .calendly a:hover{
   background-color: #00e1ff;
   border-color: #00e1ff;
   color: white;
   transition: ease .5s;
+}
+.footer .copyright p{
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: white;
 }
 @media (max-width: 768px){
   label.logo{
@@ -218,7 +249,7 @@ body{
   .checkbtn{
     display: block;
   }
-  ul{
+  nav ul{
     position: fixed;
     width: 100%;
     height: 22vh;
