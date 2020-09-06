@@ -10,7 +10,7 @@ p {
   font-family: 'Manrope', sans-serif;
 }
 nav {
-  font-family: 'Rowdies', cursive;
+  font-family: 'Rowdies', sans-serif;
   background-color: white;
   height: 80px;
   width: 100%;
@@ -21,7 +21,7 @@ nav .logo{
   color: black;
   line-height: 80px;
   padding: 0 50px;
-  margin-left: 400px;
+  margin-left: 350px;
 }
 nav .logo img{
   width: 130px;
@@ -64,7 +64,7 @@ nav ul li a{
   display: none;
 }
 body{
-  font-family: 'josefin-sans', sans-serif;
+  font-family: 'Rowdies', sans-serif;
   background: white;
 }
 #banner{
@@ -76,7 +76,7 @@ body{
   padding-bottom: 200px;
 }
 #banner h1{
-  font-family: 'josefin-sans', sans-serif;
+  font-family: 'Rowdies', sans-serif;
   font-size: 70px;
   color: #00e1ff;
   text-transform: none;
@@ -173,7 +173,7 @@ body{
   flex-direction: row;
   color: white;
   background-color: #ff45b1;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 10px;
 }
 #work .card:hover{
@@ -384,8 +384,16 @@ body{
     font-size: 40px;
     padding-left: 50px;
   }
+  nav .logo img{
+    width: 120px;
+    height: auto;
+  }
   nav ul li a{
     font-size: 17px;
+  }
+  #banner h1{
+    margin-left: 8%;
+    margin-right: 8%;
   }
   #why p{
     margin-left: 10%;
@@ -393,6 +401,32 @@ body{
   }
   #work .card{
     flex-direction: column;
+    place-items: center;
+  }
+  #work .card:hover{
+    transform: scale(1.0);
+  }
+  #work .social-list{
+    width: 200px;
+  }
+  #work .social-icons{
+    padding-bottom: 60px;
+  }
+  #work .card-info{
+    text-align: center;
+    padding-left: 0px;
+  }
+  #work .card-info h2{
+    line-height: 36px;
+  }
+  #work .card-info h4{
+    font-size: 0.95rem;
+  }
+  #work .card-info p{
+    font-size: 15px;
+  }
+  #work .card-profile .profile-pic{
+    width: 200px;
   }
 }
 @media (max-width: 768px){
@@ -402,7 +436,7 @@ body{
   nav ul{
     position: fixed;
     width: 100%;
-    height: 22vh;
+    height: 100vh;
     background: pink;
     top: 80px;
     left: 100%;
