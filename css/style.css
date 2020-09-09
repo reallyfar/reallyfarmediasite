@@ -177,8 +177,8 @@ body{
   border-radius: 10px;
 }
 #work .card:hover{
-  transform: scale(1.1);
-  transition: ease-in-out .5s;
+  transform: scale(1.04);
+  transition: all .5s ease-in-out;
 }
 #work .social-list{
   display: flex;
