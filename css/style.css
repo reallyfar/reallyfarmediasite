@@ -69,7 +69,6 @@ body{
 }
 #banner{
   background-image: url('../imgs/banner background.jpg');
-  width: 100%;
   text-align: center;
   margin: 0 auto;
   padding-top: 280px;
@@ -484,6 +483,11 @@ body{
   #why p{
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+@media (max-width: 333px){
+  #banner h1{
+    font-size: 60px;
   }
 }
 @font-face {
