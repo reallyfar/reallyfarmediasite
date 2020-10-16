@@ -234,6 +234,10 @@ body{
   font-size: 40px;
   text-transform: uppercase;
 }
+#team .video{
+  margin: 0px auto;
+  width: 80%;
+}
 #contact-top {
   padding-top: 180px;
   text-align: center;
