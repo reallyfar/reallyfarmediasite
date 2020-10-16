@@ -236,7 +236,8 @@ body{
 }
 #team .video{
   margin: 0px auto;
-  width: 80%;
+  width: 900px;
+  padding-top: 40px;
 }
 #contact-top {
   padding-top: 180px;
@@ -431,6 +432,9 @@ body{
   #work .card-profile .profile-pic{
     width: 200px;
   }
+  #team .video{
+    width: 90%;
+  }
 }
 @media (max-width: 768px){
   .checkbtn{
@@ -487,6 +491,9 @@ body{
   #why p{
     margin-left: 10%;
     margin-right: 10%;
+  }
+  #team .video{
+    width: 90%;
   }
 }
 @media (max-width: 333px){
