@@ -175,10 +175,6 @@ body{
   padding: 2rem;
   border-radius: 10px;
 }
-#work .card:hover{
-  transform: scale(1.04);
-  transition: all .5s ease-in-out;
-}
 #work .social-list{
   display: flex;
   list-style: none;
