@@ -15,6 +15,7 @@ nav {
   height: 80px;
   width: 100%;
   position: fixed;
+  z-index: +1;
 }
 nav .logo{
   font-size: 50px;
@@ -219,6 +220,85 @@ body{
   font-size: 18px;
   line-height: 28px;
 }
+#work-landingsite{
+  background-color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  place-items: center;
+}
+#work-landingsite h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#work-landingsite .text p{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+#work-landingsite .card-wrapper{
+  padding-bottom: 50px;
+}
+#work-landingsite .card{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #d63c3c;
+  padding: 2rem;
+  border-radius: 10px;
+}
+#work-landingsite .social-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+#work-landingsite .social-link{
+  color: white;
+  cursor: pointer;
+}
+#work-landingsite .card-profile .profile-pic{
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+#work-landingsite .card-info{
+  text-align: left;
+  margin: auto 0;
+  padding-left: 40px;
+}
+#work-landingsite .card-info h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+  font-family: 'Rowdies', cursive;
+}
+#work-landingsite .card-info h4{
+  font-size: 1rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  letter-spacing: 6px;
+}
+#work-landingsite .card-info p{
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
+#Abed-YouTube .video{
+  margin: 0px auto;
+  width: 900px;
+}
 #team{
   background-color: rgba(250, 250, 250);
   text-align: center;
@@ -264,6 +344,11 @@ body{
   padding-bottom: 50px;
   background: #ff45b1;
 }
+.footer-abed {
+  text-align: center;
+  padding-bottom: 50px;
+  background: #d63c3c;
+}
 #cta{
   text-align: center;
   padding-top: 50px;
@@ -284,6 +369,30 @@ body{
   color: white;
 }
 #cta .social ul{
+  padding-top: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#cta-abed{
+  text-align: center;
+  padding-top: 50px;
+  background: #d63c3c;
+}
+#cta-abed ul{
+  display: inline-flex;
+}
+#cta-abed ul li{
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+#cta-abed ul li a{
+  text-decoration: none;
+  color: white;
+}
+#cta-abed .social ul{
   padding-top: 15px;
   text-decoration: none;
   cursor: pointer;
@@ -384,6 +493,12 @@ body{
   font-size: 0.8rem;
   color: white;
 }
+.footer-abed .copyright p{
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: white;
+}
 @media (max-width: 768px){
   label.logo{
     font-size: 40px;
@@ -408,9 +523,6 @@ body{
     flex-direction: column;
     place-items: center;
   }
-  #work .card:hover{
-    transform: scale(1.0);
-  }
   #work .social-list{
     width: 200px;
   }
@@ -432,6 +544,35 @@ body{
   }
   #work .card-profile .profile-pic{
     width: 200px;
+  }
+  #work-landingsite .card{
+    flex-direction: column;
+    place-items: center;
+  }
+  #work-landingsite .social-list{
+    width: 200px;
+  }
+  #work-landingsite .social-icons{
+    padding-bottom: 60px;
+  }
+  #work-landingsite .card-info{
+    text-align: center;
+    padding-left: 0px;
+  }
+  #work-landingsite .card-info h2{
+    line-height: 36px;
+  }
+  #work-landingsite .card-info h4{
+    font-size: 0.95rem;
+  }
+  #work-landingsite .card-info p{
+    font-size: 15px;
+  }
+  #work-landingsite .card-profile .profile-pic{
+    width: 200px;
+  }
+  #Abed-YouTube .video{
+    width: 90%;
   }
   #team .video{
     width: 90%;
