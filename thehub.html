@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Hub</title>
+    <title>The Hub | Really Far Media</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/84701ad4bf.js" crossorigin="anonymous"></script>
-    <link rel="icon" href=".imgs/favicon.png" type="image/x-icon">
+    <link rel="icon" href="imgs/thehublogo.png" type="image/x-icon">
   </head>
+  <style media="screen">
+    .fa-facebook-f:hover{
+      color: #D9182B;
+    }
+    .fa-twitter:hover{
+      color: #D9182B;
+    }
+    .fa-instagram:hover{
+      color: #D9182B;
+    }
+    .fa-youtube:hover{
+      color: #D9182B;
+    }
+  </style>
   <body>
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="index.html"><img src="imgs/icon.png" alt="logo-icon"></a>
       </label>
       <ul>
         <li><a href="index.html#why">Why us?</a></li>
@@ -22,5 +39,61 @@
         <span></span>
       </ul>
     </nav>
+    <section id="the-hub-card">
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-profile">
+            <img class ="profile-pic" src="./imgs/thehublogo.png" alt="The Hub Logo">
+            <div class="social-icons">
+              <ul class="social-list">
+                <li class="social-link"><a href="https://www.facebook.com/TheHubYT" class="icon fab fa-facebook-f"></a></li>
+                <li class="social-link"><a href="https://twitter.com/TheHub_YT" class="icon fab fa-twitter"></a></li>
+                <li class="social-link"><a href="https://www.instagram.com/thehub_youtube/" class="icon fab fa-instagram"></a></li>
+                <li class="social-link"><a href="https://www.youtube.com/channel/UCup5WxHVj8WMkgtoQ_jA7WA" class="icon fab fa-youtube"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-info">
+            <h2>The Hub</h2>
+            <h4>NY Giants YouTube</h4>
+            <p>
+              The Hub is a youtube channel covering the New York football Giants through news updates, game commentaries, predictions, and skits.
+              I try to give my biased and unbiased opinion when necessary and provide Giants fans with the content they deserve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="join-the-discord">
+      <h1>Join Our Discord.</h1>
+      <p></p>
+      <a href="https://discord.gg/nk2vBKw">Come say HI!</a>
+    </section>
+    <section id=cta>
+      <ul>
+        <li>About Us</li>
+        <li><a href="https://2ccs.co/">2CCs</a></li>
+        <li><a href="abedislam.html">Abed Islam</a></li>
+        <li><a href="thehub.html">The Hub Sports</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="social">
+        <ul>
+          <li><a href="#" class="icon fab fa-facebook-f"></a></li>
+          <li><a href="#" class="icon fab fa-medium-m"></a></li>
+          <li><a href="#" class="icon fab fa-adobe"></a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="calendly">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/reallyfar/freeconsult'});return false;">Schedule a Free Consultation!</a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2020 Really Far Media</p>
+      </div>
+    </div>
   </body>
 </html>

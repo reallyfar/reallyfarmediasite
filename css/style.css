@@ -208,6 +208,11 @@ body{
   letter-spacing: 3px;
   font-family: 'Rowdies', cursive;
 }
+#work .card-info a{
+  text-decoration: none;
+  color: white;
+}
+  )
 #work .card-info h4{
   font-size: 1rem;
   opacity: 0.9;
@@ -295,10 +300,86 @@ body{
   font-size: 18px;
   line-height: 28px;
 }
+#the-hub-card{
+  background-color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  place-items: center;
+}
+#the-hub-card h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#the-hub-card .text p{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+#the-hub-card .card-wrapper{
+  padding-bottom: 50px;
+}
+#the-hub-card .card{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #0B2265;
+  padding: 2rem;
+  border-radius: 10px;
+}
+#the-hub-card .social-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+#the-hub-card .social-link{
+  color: white;
+  cursor: pointer;
+}
+#the-hub-card .card-profile .profile-pic{
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+#the-hub-card .card-info{
+  text-align: left;
+  margin: auto 0;
+  padding-left: 40px;
+}
+#the-hub-card .card-info h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+  font-family: 'Rowdies', cursive;
+}
+#the-hub-card .card-info h4{
+  font-size: 1rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  letter-spacing: 6px;
+}
+#the-hub-card .card-info p{
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+}
 #Abed-YouTube .video{
   margin: 0px auto;
   width: 900px;
 }
+
 #team{
   background-color: rgba(250, 250, 250);
   text-align: center;
@@ -499,6 +580,41 @@ body{
   font-size: 0.8rem;
   color: white;
 }
+#join-the-discord{
+  background-color: rgba(250, 250, 250);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#join-the-discord h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#join-the-discord p{
+  text-align: left;
+  padding-top: 60px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: rgb(84, 84, 84);
+  font-size: 20px;
+  line-height: 30px;
+}
+#join-the-discord a{
+  border: 2px solid;
+  border-radius: 50px;
+  color: #0B2265;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#join-the-discord a:hover{
+  background-color: #A71930;
+  border-color: #A71930;
+  color: white;
+  transition: ease .5s;
+}
 @media (max-width: 768px){
   label.logo{
     font-size: 40px;
@@ -571,11 +687,45 @@ body{
   #work-landingsite .card-profile .profile-pic{
     width: 200px;
   }
+  #the-hub-card .card{
+    flex-direction: column;
+    place-items: center;
+  }
+  #the-hub-card .social-list{
+    width: 200px;
+  }
+  #the-hub-card .social-icons{
+    padding-bottom: 60px;
+  }
+  #the-hub-card .card-info{
+    text-align: center;
+    padding-left: 0px;
+  }
+  #the-hub-card .card-info h2{
+    line-height: 36px;
+  }
+  #the-hub-card .card-info h4{
+    font-size: 0.95rem;
+  }
+  #the-hub-card .card-info p{
+    font-size: 15px;
+  }
+  #the-hub-card .card-profile .profile-pic{
+    width: 200px;
+  }
   #Abed-YouTube .video{
     width: 90%;
   }
   #team .video{
     width: 90%;
+  }
+  #join-the-discord h1{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #join-the-discord p{
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media (max-width: 768px){
