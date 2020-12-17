@@ -893,7 +893,7 @@ body{
     background-position: top;
   }
 }
-@media (max-width: 425px){
+@media (max-width: 473px){
   #the-hub-merch .carousel-control-next,
   #the-hub-merch .carousel-control-prev{
     display: none;
