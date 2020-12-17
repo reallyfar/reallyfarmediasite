@@ -872,6 +872,27 @@ body{
     bottom: 10%;
   }
 }
+@media (max-width: 551px){
+  #the-hub-merch .carousel-control-next,
+  #the-hub-merch .carousel-control-prev{
+    display: none;
+  }
+  #the-hub-merch{
+    width: 470px;
+  }
+  #the-hub-merch .carousel-item .container{
+    padding-left: 2%;
+    bottom: 10%;
+  }
+  #the-hub-merch .carousel-item .container p{
+    font-size: 20px;
+    line-height: 15px;
+  }
+  #the-hub-merch .carousel-item{
+    min-height: 600px;
+    background-position: top;
+  }
+}
 @media (max-width: 425px){
   #the-hub-merch .carousel-control-next,
   #the-hub-merch .carousel-control-prev{
