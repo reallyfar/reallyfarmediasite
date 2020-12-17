@@ -878,7 +878,7 @@ body{
     display: none;
   }
   #the-hub-merch{
-    width: 470px;
+    width: 90%;
   }
   #the-hub-merch .carousel-item .container{
     padding-left: 2%;
@@ -903,7 +903,7 @@ body{
     width: 50px;
   }
   #the-hub-merch{
-    width: 400px;
+    width: 90%;
   }
   #the-hub-merch .carousel-item .container{
     padding-left: 2%;
@@ -920,7 +920,7 @@ body{
 }
 @media (max-width: 375px){
   #the-hub-merch{
-    width: 350px;
+    width: 90%;
   }
   #the-hub-merch .carousel-item{
     min-height: 480px;
@@ -1010,7 +1010,7 @@ body{
     font-size: 14px;
   }
   #the-hub-merch{
-    width: 300px;
+    width: 90%;
   }
   #the-hub-merch .carousel-item{
     min-height: 430px;
