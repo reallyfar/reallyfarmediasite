@@ -479,58 +479,71 @@ body{
   text-decoration: none;
   cursor: pointer;
 }
-#the-hub-merch{
-  justify-content: center;
-  display: flex;
-  align-items: center;
+#merch-top{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
-.img-slider-thehub-merch{
-  position: relative;
-  width: 800px;
-  height: 800px;
-  margin: 10px;
-}
-.img-slider-thehub-merch .slide{
-  z-index: -2;
-  position: absolute;
-  width: 100%;
-}
-.img-slider-thehub-merch .slide img{
-  z-index: -1;
-  width: 100%;
-  border-radius: 5px;
-}
-.img-slider-thehub-merch .slide .info{
-  position: absolute;
-  bottom: 50%;
-  padding: 25px;
-  background: rgba(255,255,255,0.5);
-  border-radius: 3px;
-}
-.img-slider-thehub-merch .slide .info h2{
-  color: #363535;
+#merch-top h1{
+  color: rgb(48, 48, 48);
+  font-size: 40px;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
-.img-slider-thehub-merch .slide .info p{
-  color: #636363;
-  letter-spacing: 0.75px;
+#merch-top p{
+  text-align: center;
+  padding-top: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: rgb(84, 84, 84);
+  font-size: 20px;
+  line-height: 30px;
 }
-.img-slider-thehub-merch .navigation{
-  z-index: -1;
+#the-hub-merch{
+  padding: 0px;
+  padding-bottom: 100px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.carousel-container{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+#prevBtn{
   position: absolute;
-  display: flex;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.img-slider-thehub-merch .navigation .btn{
-  background: rgba(0,0,0,0.5);
-  width: 12px;
-  height: 12px;
-  margin: 10px;
-  border-radius: 50%;
+  top: 50%;
+  left: 5%;
+  z-index: 10;
+  font-size: 30px;
   cursor: pointer;
+  background: white;
+  border-radius: 2px;
+  padding: 5px;
+}
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 10;
+  font-size: 30px;
+  cursor: pointer;
+  background: white;
+  border-radius: 2px;
+  padding: 5px;
+}
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.carousel-slide img{
+  width: 500px;
+  height: 500px;
+  object-fit: inherit;
+  object-position: left;
 }
 .fa-spotify{
   color: white;
@@ -846,6 +859,15 @@ body{
   #banner h1{
     font-size: 60px;
   }
+  #cta ul{
+    display: inherit;
+    line-height: 40px;
+  }
+  #cta ul li{
+    font-size: 14px;
+  }
+  .carousel-container{
+    width: 275px;
 }
 @font-face {
     font-family: 'josefin_sansthin';
