@@ -10,6 +10,22 @@
 p {
   font-family: 'Manrope', sans-serif;
 }
+h1{
+  font-family: 'Rowdies', sans-serif;
+  font-size: 70px;
+  color: rgb(48, 48, 48);
+  text-transform: none;
+  letter-spacing: -3px;
+  font-weight: 100;
+}
+h2{
+  font-family: 'Rowdies', sans-serif;
+  color: rgb(48, 48, 48);
+}
+h4{
+  font-family: 'Rowdies', sans-serif;
+  color: rgb(48. 48. 48);
+}
 nav {
   font-family: 'Rowdies', sans-serif;
   background-color: white;
@@ -499,51 +515,93 @@ body{
   line-height: 30px;
 }
 #the-hub-merch{
-  padding: 0px;
-  padding-bottom: 100px;
-  margin: 0px;
-  box-sizing: border-box;
+  width: 1000px;
+  align-items: center;
+  margin: 0px auto;
+  padding-bottom: 200px;
 }
-.carousel-container{
-  width: 500px;
-  height: 500px;
-  margin: auto;
-  border-radius: 15px;
-  overflow: hidden;
+#the-hub-merch .carousel-item{
+  min-height: 800px;
+  background-size: contain;
+  background-position: center;
   position: relative;
+  background-repeat: no-repeat;
 }
-#prevBtn{
+#the-hub-merch .carousel-item .container{
+  background: rgba(255, 255 , 255, 0.5);
   position: absolute;
-  top: 50%;
-  left: 5%;
-  z-index: 10;
-  font-size: 30px;
-  cursor: pointer;
-  background: white;
-  border-radius: 2px;
-  padding: 5px;
+  left: 50%;
+  bottom: 7%;
+  padding-left: 12%;
+  transform: translate(-50%,50%);
 }
-#nextBtn{
+#the-hub-merch .carousel-item h2{
+  opacity: 0;
+}
+#the-hub-merch .carousel-item p{
+  opacity: 0;
+}
+#the-hub-merch .carousel-item.active h2{
+  animation: fadeInLeft 0.5s ease forwards;
+}
+#the-hub-merch .carousel-item.active p{
+  animation: fadeInLeft 0.8s ease forwards;
+}
+@keyframes fadeInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+#the-hub-merch .carousel-controls{
   position: absolute;
-  top: 50%;
-  right: 5%;
+  left: 50%;
+  bottom: -60px;
   z-index: 10;
-  font-size: 30px;
-  cursor: pointer;
-  background: white;
-  border-radius: 2px;
-  padding: 5px;
+  transform: translateX(-50%);
 }
-.carousel-slide{
-  display: flex;
-  width: 100%;
-  height: 100%;
+#the-hub-merch .carousel-indicators{
+  position: relative;
+  margin: 0;
 }
-.carousel-slide img{
-  width: 500px;
-  height: 500px;
-  object-fit: inherit;
-  object-position: left;
+#the-hub-merch .carousel-indicators li{
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+#the-hub-merch .carousel-indicators li.active{
+  border-color: #A71930;
+  transform: scale(1.1);
+}
+#the-hub-merch .carousel-control-next,
+#the-hub-merch .carousel-control-prev{
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  z-index: 3;
+  transform: translateY(-900%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#the-hub-merch .carousel-control-next:hover,
+#the-hub-merch .carousel-control-prev:hover{
+  box-shadow: 0 0 10px #0B2265;
+}
+#the-hub-merch .carousel-control-next{
+  right: -350px;
+}
+#the-hub-merch .carousel-control-prev{
+  left: -350px;
 }
 .fa-spotify{
   color: white;
@@ -794,6 +852,65 @@ body{
     margin-left: 10%;
     margin-right: 10%;
   }
+  #the-hub-merch .carousel-control-next,
+  #the-hub-merch .carousel-control-prev{
+    display: none;
+  }
+  #the-hub-merch .carousel-indicators li{
+    height: 50px;
+    width: 50px;
+  }
+  #the-hub-merch{
+    width: 550px;
+  }
+  #the-hub-merch .carousel-item .container{
+    padding-left: 2%;
+  }
+}
+@media (max-width: 425px){
+  #the-hub-merch .carousel-control-next,
+  #the-hub-merch .carousel-control-prev{
+    display: none;
+  }
+  #the-hub-merch .carousel-indicators li{
+    height: 50px;
+    width: 50px;
+  }
+  #the-hub-merch{
+    width: 400px;
+  }
+  #the-hub-merch .carousel-item .container{
+    padding-left: 2%;
+    bottom: 10%;
+  }
+  #the-hub-merch .carousel-item .container p{
+    font-size: 20px;
+    line-height: 15px;
+  }
+  #the-hub-merch .carousel-item{
+    min-height: 520px;
+    background-position: top;
+  }
+}
+@media (max-width: 375px){
+  #the-hub-merch{
+    width: 350px;
+  }
+  #the-hub-merch .carousel-item{
+    min-height: 480px;
+    background-position: top;
+  }
+  #the-hub-merch .carousel-item .container{
+    bottom: 12%;
+  }
+  #merch-top h2{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #merch-top p{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 @media (max-width: 768px){
   .checkbtn{
@@ -866,8 +983,23 @@ body{
   #cta ul li{
     font-size: 14px;
   }
-  .carousel-container{
-    width: 275px;
+  #the-hub-merch{
+    width: 300px;
+  }
+  #the-hub-merch .carousel-item{
+    min-height: 430px;
+    background-position: top;
+  }
+  #the-hub-merch .carousel-item h2{
+    font-size: 1.5rem;
+  }
+  #the-hub-merch .carousel-item p{
+    font-size: 8px;
+  }
+  #the-hub-merch .carousel-indicators li{
+    height: 40px;
+    width: 40px;
+  }
 }
 @font-face {
     font-family: 'josefin_sansthin';

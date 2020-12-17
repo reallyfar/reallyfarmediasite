@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/84701ad4bf.js" crossorigin="anonymous"></script>
@@ -22,6 +23,25 @@
     }
     .fa-youtube:hover{
       color: #D9182B;
+    }
+    .card-info h2{
+      color: white;
+    }
+    a{
+      text-decoration: none;
+      font-family: 'Rowdies', sans-serif;
+    }
+    .carousel-item p{
+      font-size: 25px;
+      line-height: 20px;
+    }
+    .fa-arrow-left{
+      font-size: 30px;
+      color: #0B2265;
+    }
+    .fa-arrow-right{
+      font-size: 30px;
+      color: #0B2265;
     }
   </style>
   <body>
@@ -74,20 +94,62 @@
       <p>All the merch here is designed by our in-house team of designers. We take great pridde in our Giants Spirit.</p>
     </section>
     <section id="the-hub-merch">
-      <div class="carousel-container">
-        <i class="fas fa-arrow-left" id="prevBtn"></i>
-        <i class="fas fa-arrow-right" id="nextBtn"></i>
-        <div class="carousel-slide">
-          <img class="carousel-imade" src="./imgs/sackthehallsteewomen.png" id="lastClone" alt="">
-          <img class="carousel-imade" src="./imgs/sackthehallshoodie.png" alt="">
-          <img class="carousel-imade" src="./imgs/sackthehallslongsleeve.png" alt="">
-          <img class="carousel-imade" src="./imgs/sackthehallslongsleevealt.png" alt="">
-          <img class="carousel-imade" src="./imgs/sackthehallsteemen.png" alt="">
-          <img class="carousel-imade" src="./imgs/sackthehallsteewomen.png" alt="">
-          <img class="carousel-imade" src="./imgs/sackthehallshoodie.png" id="firstClone" alt="">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-controls">
+          <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carousel" data-bs-slide-to="0" class="active" style="background-image:url('./imgs/sackthehallshoodie.png')"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="1" style="background-image:url('./imgs/sackthehallslongsleeve.png')"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="2" style="background-image:url('./imgs/sackthehallslongsleevealt.png')"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="3" style="background-image:url('./imgs/sackthehallsteemen.png')"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="4" style="background-image:url('./imgs/sackthehallsteewomen.png')"></li>
+          </ol>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image:url('./imgs/sackthehallshoodie.png')">
+            <div class="container">
+              <h2>Sack The Halls Hoodie</h2>
+              <p>Classic Pullover Hoodie</p>
+              <p>$35.99</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image:url('./imgs/sackthehallslongsleeve.png')">
+            <div class="container">
+              <h2>Sack The Halls Long Sleeve Tee</h2>
+              <p>Classic Long Sleeve Tee</p>
+              <p>$28.99</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image:url('./imgs/sackthehallslongsleevealt.png')">
+            <div class="container">
+              <h2>Sack The Halls Crewneck Sweatshirt</h2>
+              <p>Classic Crewneck Sweatshirt</p>
+              <p>$34.99</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image:url('./imgs/sackthehallsteemen.png')">
+            <div class="container">
+              <h2>Sack The Halls Tee - Men</h2>
+              <p>Classic Tee</p>
+              <p>$21.99</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image:url('./imgs/sackthehallsteewomen.png')">
+            <div class="container">
+              <h2>Sack The Halls Tee - Women</h2>
+              <p>Women's Comfort Tee</p>
+              <p>$21.99</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <script src=./js/app.js></script>
+
       <!--
       <script type="text/javascript">
         var slides = document.querySelectorAll('.slide');
@@ -140,6 +202,7 @@
       </script>
     -->
     </section>
+    <script src=./js/bootstrap.bundle.min.js></script>
     <section id=cta>
       <ul>
         <li>About Us</li>
