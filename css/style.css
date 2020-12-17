@@ -515,15 +515,15 @@ body{
   line-height: 30px;
 }
 #the-hub-merch{
-  width: 1000px;
+  width: 700px;
   align-items: center;
   margin: 0px auto;
   padding-bottom: 200px;
 }
 #the-hub-merch .carousel-item{
-  min-height: 800px;
+  min-height: 850px;
   background-size: contain;
-  background-position: center;
+  background-position: top;
   position: relative;
   background-repeat: no-repeat;
 }
@@ -532,7 +532,7 @@ body{
   position: absolute;
   left: 50%;
   bottom: 7%;
-  padding-left: 12%;
+  padding-left: 2%;
   transform: translate(-50%,50%);
 }
 #the-hub-merch .carousel-item h2{
@@ -589,7 +589,7 @@ body{
   width: 50px;
   opacity: 1;
   z-index: 3;
-  transform: translateY(-900%);
+  transform: translateY(-1000%);
   border-radius: 50%;
   transition: all 0.3s ease;
 }
