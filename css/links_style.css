@@ -1,0 +1,89 @@
+/*Really Far Media Links Landing Page Style*/
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  align-items: center;
+  text-align: center;
+}
+body{
+  width: 900px;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+p{
+  font-family: 'Manrope', sans-serif;
+  color: white;
+}
+#profile{
+  margin-top: 70px;
+  margin-bottom: 50px;
+  place-items: center;
+  text-align: center;
+}
+#profile img{
+  width: 20%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+/*
+#links{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#links a{
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  border: 5px solid white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+#links a:hover{
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+*/
+button{
+  color: black;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 80%;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  transition: opacity 0.7s;
+
+}
+button:hover{
+  opacity: 1;
+}
+footer{
+  bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: red;
+  opacity: 0.8;
+}
+footer p{
+  font-size: 12px;
+  font-family: 'Manrope'. sans-serif;
+  color: white;
+}
