@@ -12,6 +12,7 @@
 }
 body{
   width: 60%;
+  background-color: #3b3a3a;
 }
 h2{
   font-family: 'Montserrat', sans-serif;
@@ -32,28 +33,6 @@ p{
   border-radius: 50%;
   border: 5px solid white;
 }
-/*
-#links{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-#links a{
-  width: 100%;
-  text-decoration: none;
-  color: white;
-  border: 5px solid white;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-}
-#links a:hover{
-  background-color: white;
-  color: black;
-  transition: 0.3s ease-in-out;
-}
-*/
 button{
   color: black;
   background-color: white;
