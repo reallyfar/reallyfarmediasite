@@ -603,8 +603,8 @@ body{
   margin: 0;
 }
 #the-hub-merch .carousel-indicators li{
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   margin: 0 5px;
   border-radius: 50%;
   background-position: center;
@@ -894,8 +894,8 @@ body{
     display: none;
   }
   #the-hub-merch .carousel-indicators li{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
   }
   #the-hub-merch{
     width: 550px;
@@ -922,8 +922,8 @@ body{
     bottom: 10%;
   }
   #the-hub-merch .carousel-item .container p{
-    font-size: 20px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: auto;
   }
   #the-hub-merch .carousel-item{
     min-height: 600px;
@@ -936,8 +936,8 @@ body{
     display: none;
   }
   #the-hub-merch .carousel-indicators li{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   #the-hub-merch{
     width: 90%;
@@ -947,8 +947,8 @@ body{
     bottom: 10%;
   }
   #the-hub-merch .carousel-item .container p{
-    font-size: 20px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: auto;
   }
   #the-hub-merch .carousel-item{
     min-height: 520px;
@@ -966,6 +966,10 @@ body{
   #the-hub-merch .carousel-item .container{
     bottom: 12%;
   }
+  #the-hub-merch .carousel-indicators li{
+    width: 30px;
+    height: 30px;
+  }
   #merch-top h2{
     margin-left: 5%;
     margin-right: 5%;
@@ -973,6 +977,9 @@ body{
   #merch-top p{
     margin-left: 5%;
     margin-right: 5%;
+  }
+  #cta ul{
+    padding: 0;
   }
 }
 @media (max-width: 768px){
@@ -1060,8 +1067,8 @@ body{
     font-size: 8px;
   }
   #the-hub-merch .carousel-indicators li{
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
   }
 }
 @font-face {
