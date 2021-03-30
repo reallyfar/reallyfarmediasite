@@ -20,10 +20,17 @@ h1{
 }
 h2{
   font-family: 'Rowdies', sans-serif;
+  font-size: 55px;
   color: rgb(48, 48, 48);
+}
+h3{
+  font-family: 'Rowdies', sans-serif;
+  font-size: 35px;
+  color: rgb(48,48,48);
 }
 h4{
   font-family: 'Rowdies', sans-serif;
+  font-size: 30px;
   color: rgb(48. 48. 48);
 }
 nav {
@@ -144,7 +151,7 @@ body{
   line-height: 30px;
 }
 #why .calendly{
-  padding-top: 60px;
+  margin-top: 60px;
 }
 #why a{
   border: 2px solid;
@@ -224,12 +231,12 @@ body{
   padding-bottom: 10px;
   letter-spacing: 3px;
   font-family: 'Rowdies', cursive;
+  color: white;
 }
 #work .card-info a{
   text-decoration: none;
   color: white;
 }
-  )
 #work .card-info h4{
   font-size: 1rem;
   opacity: 0.9;
@@ -505,6 +512,11 @@ body{
   font-size: 40px;
   text-transform: uppercase;
 }
+#the-hub-merch-title h2{
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
 #merch-top p{
   text-align: center;
   padding-top: 40px;
@@ -513,6 +525,13 @@ body{
   color: rgb(84, 84, 84);
   font-size: 20px;
   line-height: 30px;
+}
+#the-hub-merch-title p{
+  text-align: center;
+  color: rgb(84,84,84);
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 40px;
 }
 #the-hub-merch{
   width: 700px;
@@ -531,12 +550,27 @@ body{
   background: rgba(255, 255 , 255, 0.5);
   position: absolute;
   left: 50%;
-  bottom: 7%;
+  bottom: 10%;
+  padding-top: 10px;
+  padding-bottom: 5px;
   padding-left: 2%;
   transform: translate(-50%,50%);
+  transition: 0.7s;
+  border-radius: 15px;
+}
+#the-hub-merch .carousel-item a{
+  text-decoration: none;
+  color: rgb(84, 84, 84);
+}
+#the-hub-merch .carousel-item .container:hover{
+  background: rgba(245, 245, 252,0.6);
+  border: solid #0B2265 3px;
+  border-radius: 15px;
+  bottom: 9.5%;
 }
 #the-hub-merch .carousel-item h2{
   opacity: 0;
+  color: rgb(84,84,84);
 }
 #the-hub-merch .carousel-item p{
   opacity: 0;
@@ -724,11 +758,14 @@ body{
   color: rgb(84, 84, 84);
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 50px;
 }
 #join-the-discord a{
   border: 2px solid;
   border-radius: 50px;
   color: #0B2265;
+  margin-top: 30px;
+  text-decoration: none;
   padding: 20px;
   font-size: 20px;
   font-weight: 700;

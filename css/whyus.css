@@ -1,0 +1,133 @@
+#container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
+.subtitle{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content{
+    margin: 0 15%;
+    max-width: 100%;
+}
+.content-flex{
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+}
+.image-wrapper{
+    min-width: 30%;
+    max-width: 75%;
+    object-fit: contain;
+    animation: fadeIn 1s;
+    z-index: 0;
+    float: left;
+}
+img{
+    max-width: 100%;
+}
+.text-wrapper{
+    position: absolute;
+    padding: 30px;
+    top: 10%;
+    left: 50%;
+    background-color: pink;
+    transform: translate(0%, 0%);
+    max-width: 50%;
+    min-width: 30%;
+    position: absolute;
+    animation: fadeIn 1.5s;
+    float: right;
+    z-index: 1;
+}
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.text-wrapper p{
+    font-size: 19px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.content-flex-alt{
+    margin-top: 50px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.image-wrapper-alt{
+    min-height: 30%;
+    max-width: 75%;
+    object-fit: contain;
+    animation: fadeIn 1s;
+    z-index: 0;
+    float: right;
+}
+.text-wrapper-alt{
+    z-index: 1;
+    position: absolute;
+    padding: 30px;
+    top: 10%;
+    float: left;
+    background-color: pink;
+    transform: translate(0%, 0%);
+    max-width: 50%;
+    min-width: 30%;
+    animation: fadeIn;
+}
+.text-wrapper-alt p{
+    font-size: 19px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.text-wrapper a{
+    text-decoration: underline;
+    transition: 0.3s;
+    color: inherit;
+}
+.text-wrapper a:hover{
+    color: #00e1ff;
+}
+@media (max-width: 1024px) {
+    .text-wrapper p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .text-wrapper h3{
+        font-size: 25px;
+    }
+    .text-wrapper-alt p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .text-wrapper-alt h3{
+        font-size: 25px;
+    }
+}
+@media (max-width: 768px){
+    .content-flex{
+        display: inline-grid;
+    }
+    .text-wrapper{
+        position: inherit;
+        top: 0%;
+        left: 0%;
+        max-width: 100%;
+    }
+    .image-wrapper{
+        position: inherit;
+        max-width: 100%;
+    }
+    .text-wrapper-alt{
+        position: inherit;
+        max-width: 100%;
+    }
+    .image-wrapper-alt{
+        position: inherit;
+        max-width: 100%;
+    }
+}
